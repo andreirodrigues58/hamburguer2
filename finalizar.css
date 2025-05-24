@@ -1,0 +1,243 @@
+:root {
+    --black: #000;
+    --branco: #FFFFFF;
+    --marrom: #351f11;
+    --border: 1px solid #F5F5F5;
+    --begeclaro: #FDE7B3;
+    font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+section {
+    padding: 48px 32px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+body, html {
+    height: 100%;
+  }
+  
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--begeclaro); /* opcional, para fundo */
+  }
+
+.back{
+    background-color: var(--marrom);
+    text-align: center;
+    gap: 25px;
+    padding: 20px;
+    justify-content: center;
+    width: 500px;
+    height: auto;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+.back h1{
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #FDE7B3;
+}
+
+.textw{
+    color: #FDE7B3;
+}
+
+.back label{
+    color: #FDE7B3;
+    font-weight: bold;
+}
+
+.back select{
+    padding: 10px;
+    background: none;
+    font-weight: bold;
+    color: #FDE7B3;
+    cursor: pointer;
+}
+
+.frete input{
+    padding: 6px;
+    border: none;
+    border-radius: 6px;
+    width: 120px;
+}
+
+.frete button{
+    padding: 6px;
+    border: none;
+    border-radius: 6px;
+    width: 120px;
+    cursor: pointer;
+    background-color: #FDE7B3;
+    font-weight: bold;
+    font-size: 13px;
+    margin-bottom: 3px;
+}
+
+.frete p{
+    font-size: 14px;
+}
+
+.total-final{
+    font-size: 14px;
+    color: #FDE7B3;
+    margin-bottom: 3px;
+}
+
+#confirmar-pedido{
+    padding: 6px;
+    border: none;
+    border-radius: 6px;
+    width: 120px;
+    cursor: pointer;
+    background-color: #FDE7B3;
+    font-weight: bold;
+    font-size: 13px;
+    margin-top: 3px;
+}
+
+#voltar-carrinho{
+    padding: 6px;
+    border: none;
+    border-radius: 6px;
+    width: 120px;
+    cursor: pointer;
+    background-color: #FDE7B3;
+    font-weight: bold;
+    font-size: 13px;
+    margin-top: 3px;
+}
+  
+  .finalizar-pedido-card {
+    background-color: var(--begeclaro);
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 30px 25px;
+    border-radius: 12px;
+    border: var(--border);
+    box-shadow: 0 6px 12px rgba(53, 31, 17, 0.15);
+    color: #FDE7B3;
+    font-family: "Roboto Condensed", sans-serif;
+    text-align: center;
+  }
+  
+  .finalizar-pedido-card h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #FDE7B3;
+  }
+  
+  .itens-pedido p {
+    background: var(--white, var(--branco));
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: var(--border);
+    margin-bottom: 25px;
+    color: #FDE7B3;
+    font-weight: 600;
+  }
+  
+  .forma-pagamento {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+  
+  .forma-pagamento label {
+    font-weight: 600;
+    color: #FDE7B3;
+    text-align: left;
+  }
+  
+  .forma-pagamento select,
+  .forma-pagamento input {
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: var(--border);
+    font-size: 1rem;
+    font-family: inherit;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .forma-pagamento select:focus,
+  .forma-pagamento input:focus {
+    border-color: var(--marrom);
+    box-shadow: 0 0 6px var(--marrom);
+  }
+  
+  #calcular-frete {
+    background-color: var(--marrom);
+    color: #FDE7B3;
+    font-weight: 700;
+    padding: 12px 0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  #calcular-frete:hover {
+    background-color: #2a150c; /* tom mais escuro do marrom */
+  }
+  
+  .frete,
+  .total {
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin: 8px 0;
+    color: #FDE7B3;
+  }
+  
+  .btn-confirmar {
+    background-color: var(--marrom);
+    color: #FDE7B3;
+    border: none;
+    padding: 14px 0;
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-confirmar:hover {
+    background-color: #2a150c;
+  }
+  
+
+  @media (max-width: 768px) {
+    .back{
+    width: 350px;
+    height: auto;
+  }
+
+  #confirmar-pedido{
+    font-size: 11px;
+}
+
+#voltar-carrinho{
+    font-size: 11px;
+}
+  }

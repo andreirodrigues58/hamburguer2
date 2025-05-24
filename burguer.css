@@ -1,0 +1,646 @@
+:root {
+    --black: #000;
+    --branco: #FFFFFF;
+    --marrom: #351f11;
+    --border: 1px solid #F5F5F5;
+    --begeclaro: #FDE7B3;
+    font-size: 16px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.carrinho-link {
+  position: relative;
+  display: inline-block;
+}
+
+.contador-carrinho {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: red;
+  color: white;
+  font-size: 12px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 18px;
+  display: none; /* Oculto até ter algo */
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+section {
+    padding: 48px 32px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+#oi{
+  display: none;
+}
+
+.header {
+    background-color: var(--marrom);
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: 1000px;
+    border-bottom: 2px solid var(--begeclaro);
+}
+
+
+.header section {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.header section a img{
+    border: 3px solid var(--begeclaro);
+    border-radius: 50%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* espaço entre imagem e texto */
+    text-decoration: none;
+}
+
+.logo p {
+    color: var(--begeclaro);
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.icons img {
+    margin: 1.5px;
+    padding: 1px;
+    gap: 10px;
+    cursor: pointer;
+    display: inline-block;
+    background-color: #FDE7B3;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.icons img:hover {
+    width: 40px;
+    height: 40px;
+    color: var(--begeclaro);
+}
+
+.btn {
+    background: var(--begeclaro);
+    color: var(--marrom);
+    border-radius: 6px;
+    padding: 6px 14px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.btn:hover {
+    letter-spacing: 0.02rem;
+}
+
+
+.home-container section {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    flex-direction: column;
+}
+
+.home-container .content {
+    display: flex;
+    flex-direction: row;
+    padding: 15px 20px;
+    border-radius: 15px;
+    max-width: 60rem;
+    align-items: flex-start;
+    justify-content: start;
+}
+
+
+.content p {
+    margin-top: 1px;
+    text-align: left;
+    color: var(--black);
+    padding: 1px;
+    gap: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.aberto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  background-color: #FDE7B3;
+  width: 100%;
+  height: 20px;
+  border-radius: 5px;
+}
+
+.aberto .fechada-msg {
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+}
+
+/* Classes de cor dinâmica */
+.verde {
+  color: #28a745;
+}
+
+.vermelho {
+  color: #ED2B2A;
+}
+
+.title{
+    font-size: 20px;
+    color: var(--marrom);
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.menu .box-servico {
+    display: flex;
+    flex-wrap: nowrap; /* impede quebra de linha */
+    overflow-x: auto; /* permite rolagem horizontal */
+    gap: 5px;
+    padding: 10px 0;
+    margin: 0;
+
+    /* Importante para toque em dispositivos móveis */
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* esconde a barra de rolagem no Firefox */
+}
+
+/* Esconde a barra de rolagem no Chrome/Safari */
+.menu .box-servico::-webkit-scrollbar {
+    display: none;
+}
+
+.menu .box-servico .servico {
+    flex: 0 0 auto; /* impede que os cards encolham ou cresçam */
+    text-align: center; /* centraliza o conteúdo, incluindo o botão */
+    cursor: pointer;
+    width: 150px;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.menu .box-servico .servico img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin: 0;
+    padding: 0;
+}
+
+.menu .box-servico .servico .price {
+    font-weight: bold;
+    color: #ED2B2A;
+}
+
+.menu .box-servico .servico h3,
+.menu .box-servico .servico .price,
+.menu .box-servico .servico a {
+    margin: 0;
+    display: block;
+    text-align: left;
+}
+
+.box-petiscos {
+    display: grid;
+    grid-template-columns: 500px 500px;
+    max-width: 1000px;
+    gap: 18px 60px;
+    margin-top: 8px;
+    justify-content: start; /* faz o grid alinhar à esquerda */
+}
+
+.box-bebida{
+    display: grid;
+    grid-template-columns: 500px 500px;
+    max-width: 1000px;
+    gap: 18px 60px;
+    margin-top: 8px;
+    justify-content: start; /* faz o grid alinhar à esquerda */
+    margin-bottom: 60px;
+}
+
+  
+  .petiscos {
+    display: flex;              /* flex row para alinhar lado a lado */
+    gap: 20px;                 /* espaçamento entre imagem e conteúdo */
+    border-radius: 6px;
+    padding: 10px;
+    background-color: #fafafa;
+    align-items: center;       /* alinha verticalmente imagem e texto */
+    border: 2px solid #FDE7B3;
+    transition: box-shadow 0.3s ease; /* para uma transição suave */
+}
+
+.petiscos:hover {
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(53, 31, 17, 0.3);
+}
+  
+  .petiscos img {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* texto em cima, preço em baixo */
+    height: 150px;                   /* mesma altura da imagem */
+    flex: 1;                        /* ocupa o espaço restante */
+  }
+  
+  .name {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .price {
+    font-weight: bold;
+    color: #ED2B2A;
+    align-self: flex-start; /* fica na esquerda, pode mudar para flex-end */
+  }
+
+
+  .box-petiscos {
+    display: grid;
+    grid-template-columns: 500px 500px;
+    max-width: 1000px;
+    gap: 18px 60px;
+    margin-top: 8px;
+    justify-content: start; /* faz o grid alinhar à esquerda */
+}
+
+.box-bebida{
+    display: grid;
+    grid-template-columns: 500px 500px;
+    max-width: 1000px;
+    gap: 18px 60px;
+    margin-top: 8px;
+    justify-content: start; /* faz o grid alinhar à esquerda */
+    margin-bottom: 60px;
+}
+
+  
+  .bebida {
+    display: flex;              /* flex row para alinhar lado a lado */
+    gap: 20px;                 /* espaçamento entre imagem e conteúdo */
+    border-radius: 6px;
+    padding: 10px;
+    background-color: #fafafa;
+    align-items: center;       /* alinha verticalmente imagem e texto */
+    border: 2px solid #FDE7B3;
+    transition: box-shadow 0.3s ease; /* para uma transição suave */
+}
+
+.bebida:hover {
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(53, 31, 17, 0.3);
+}
+  
+  .bebida img {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* texto em cima, preço em baixo */
+    height: 150px;                   /* mesma altura da imagem */
+    flex: 1;                        /* ocupa o espaço restante */
+  }
+  
+  .name {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .price {
+    font-weight: bold;
+    color: #ED2B2A;
+    align-self: flex-start; /* fica na esquerda, pode mudar para flex-end */
+  }
+
+
+  .box-burguer {
+    display: grid;
+    grid-template-columns: 500px 500px;
+    max-width: 1000px;
+    gap: 18px 60px;
+    margin-top: 8px;
+    justify-content: start; /* faz o grid alinhar à esquerda */
+}
+
+.box-burguer{
+    display: grid;
+    grid-template-columns: 500px 500px;
+    max-width: 1000px;
+    gap: 18px 60px;
+    margin-top: 8px;
+    justify-content: start; /* faz o grid alinhar à esquerda */
+    margin-bottom: 60px;
+}
+
+  
+  .burguer {
+    display: flex;              /* flex row para alinhar lado a lado */
+    gap: 20px;                 /* espaçamento entre imagem e conteúdo */
+    border-radius: 6px;
+    padding: 10px;
+    background-color: #fafafa;
+    align-items: center;       /* alinha verticalmente imagem e texto */
+    border: 2px solid #FDE7B3;
+    transition: box-shadow 0.3s ease; /* para uma transição suave */
+}
+
+.burguer:hover {
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(53, 31, 17, 0.3);
+}
+  
+  .burguer img {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* texto em cima, preço em baixo */
+    height: 150px;                   /* mesma altura da imagem */
+    flex: 1;                        /* ocupa o espaço restante */
+  }
+  
+  .name {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .price {
+    font-weight: bold;
+    color: #ED2B2A;
+    align-self: flex-start; /* fica na esquerda, pode mudar para flex-end */
+  }
+
+
+  .footer {
+    background-color: var(--marrom);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: 1000;
+    border-top: 2px solid var(--begeclaro);
+    height: 70px; /* garanta altura */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1px;
+    padding-bottom: 1px;
+  }
+  
+  .iconsa {
+    display: flex;
+    gap: 50px;
+    justify-content: flex-start;
+    align-items: flex-end; /* muda para flex-end para borda alinhar no rodapé */
+    height: 70px; /* mesma altura do footer */
+    margin-bottom: 16px;
+    width: 100px;
+  }
+  
+  .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    padding-top: 2px; /* espaço para o border */
+  }
+
+  .item a img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    padding-top: 2px; /* espaço para o border */
+  }
+  
+  .i {
+    margin-top: 6px;
+    font-size: 14px;
+    color: var(--begeclaro);
+  }
+  
+  .item.active {
+    border-top: 3px solid #ED2B2A;
+    padding-top: 10px; /* remove padding extra para borda ficar na base */
+    width: 100px;
+  }
+  
+  .item.active .i {
+    color: #ED2B2A;
+  }
+  
+  /* Para "colorir" a imagem, tente trocar o ícone para um SVG vermelho */
+  /* Ou usar filtro complexo (gambiarra), exemplo: */
+  .item.active img {
+    filter: invert(23%) sepia(90%) saturate(7491%) hue-rotate(348deg) brightness(93%) contrast(101%);
+  }
+  
+  
+
+
+
+
+  /* Responsivo para tablets e telas menores que 798px */
+@media (max-width: 768px) {
+  .box-petiscos,
+  .box-bebida,
+  .box-burguer {
+    grid-template-columns: 1fr; /* uma coluna */
+    justify-content: center;
+  }
+
+  .menu .box-servico {
+    gap: 10px;
+  }
+
+  .home-container .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header section {
+    flex-direction: row;
+    height: auto;
+    gap: 10px;
+  }
+
+
+  .price{
+    margin-left: 80px;
+  }
+
+  .icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .iconsa {
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .item {
+    width: auto;
+  }
+
+  .content {
+    height: auto;
+    align-items: center;
+    text-align: center;
+  }
+
+  .petiscos,
+  .bebida,
+  .burguer {
+ 
+    align-items: center;
+    text-align: center;
+  }
+
+  .petiscos img,
+  .bebida img,
+  .burguer img {
+    width: 110px;
+    height: 110px;
+    max-width: 200px;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  section {
+    padding: 32px 16px;
+  }
+}
+
+/* Responsivo para celulares com largura até 390px */
+@media (max-width: 390px) {
+  :root {
+    font-size: 14px;
+  }
+
+  .logo p {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .box-petiscos,
+  .box-bebida,
+  .box-burguer {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .petiscos img,
+  .bebida img,
+  .burguer img {
+    max-width: 100%;
+  }
+
+  .iconsa {
+    gap: 10px;
+    margin-bottom: 8px;
+  }
+
+  .item .i {
+    font-size: 12px;
+  }
+
+  .price{
+    margin-left: 60px;
+  }
+
+  .btn {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+
+  .contador-carrinho {
+    width: 16px;
+    height: 16px;
+    font-size: 10px;
+    line-height: 16px;
+  }
+
+  .item.active {
+    border-top: 3px solid #ED2B2A;
+    padding-top: 16px; /* remove padding extra para borda ficar na base */
+    width: 50px;
+  }
+}

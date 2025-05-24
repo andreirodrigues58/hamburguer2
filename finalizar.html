@@ -1,0 +1,41 @@
+<!-- finalizar.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="finalizar.css">
+  <title>Finalizar Pedido</title>
+</head>
+<body>
+    <section class="back">
+  <h1>Finalizar Pedido</h1>
+  <div id="resumo-pedido"></div>
+  <br>
+  <label for="forma-pagamento">Forma de Pagamento:</label>
+  <select id="forma-pagamento">
+    <option value="Cartão de Débito">Cartão de Débito</option>
+    <option value="Cartão de Crédito">Cartão de Crédito</option>
+    <option value="PIX">PIX</option>
+    <option value="Dinheiro">Dinheiro</option>
+  </select>
+
+  <div class="frete">
+    <input type="text" id="cep" placeholder="Digite seu CEP">
+    <input type="text" id="numero-casa" placeholder="Nº"> <br><br>
+    <button class="calcular-frete">Calcular Frete</button>
+    <p id="localizacao-cep"></p>
+    <p>Frete: R$<span id="valor-frete">0.00</span></p>
+  </div>
+
+  <div class="total-final">
+    <strong>Total com Frete: <span id="total-com-frete"></span></strong>
+  </div>
+   
+  <button id="voltar-carrinho">Voltar</button>
+  <button id="confirmar-pedido">Confirmar Pedido</button>
+</section>
+
+  <script src="finalizar.js"></script>
+</body>
+</html>

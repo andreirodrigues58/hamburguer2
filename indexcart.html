@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cart.css">
+    <title>Meu Carrinho</title>
+</head>
+
+<body>
+    <div class="cart-container">
+        <header class="cart-header">
+            <section>
+                <button class="close-btn" onclick="location.href='index.html'"><img width="20" height="20"
+                        src="https://img.icons8.com/ios-filled/50/back.png" alt="back" /></button>
+                <h1>Meu Carrinho</h1>
+            </section>
+        </header>
+
+        <section class="items" id="carrinho-lista"></section>
+
+        <section class="menu" id="Menu">
+            <h2 class="title">MAIS POPULARES</h2>
+            <div class="box-servico">
+                <div class="servico">
+                    <div class="image-container">
+                        <img src="img/Texas Smoke.png" alt="corte masculino">
+                        <div class="plus">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <h3>Texas Smoke</h3>
+                    
+                    <div class="price">
+                        R$ 31,00
+                    </div>
+                    <p class="descri" id="oi">Pão Australiano, 160g De Blend Defumado, Queijo Prato, Cebola Crispy,
+                        Picles
+                        De Jalapeño E Molho Barbecue Defumado.</p>
+
+                </div>
+                <div class="servico">
+                    <div class="image-container">
+                        <img src="img/Havaiano.png" alt="barba">
+                        <div class="plus">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <h3>Havaiano</h3>
+                    <p class="descri" id="oi">Pão brioche, 160g de blend suíno, queijo muçarela, abacaxi grelhado,
+                        alface e
+                        molho agridoce de maracujá..</p>
+                    <div class="price">
+                        R$ 29,00
+                    </div>
+                </div>
+                <div class="servico">
+                    <div class="image-container">
+                        <img src="img/Cebola Bloom.png" alt="barba">
+                        <div class="plus">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <h3>Cebola Bloom</h3>
+                    <p class="descri" id="oi">Cebola inteira empanada e aberta em formato de flor, super crocante.
+                        Acompanha
+                        molho especial da casa.</p>
+                    <div class="price">
+                        R$ 6,00
+                    </div>
+
+                </div>
+                <div class="servico">
+                    <div class="image-container">
+                        <img src="img/Vampiro.png" alt="Sobrancelha">
+                        <div class="plus">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <h3>Vampiro</h3>
+                    <p class="descri" id="oi">Pão de alho artesanal, 160g de carne bovina, queijo parmesão gratinado,
+                        molho
+                        aioli extra alho e folhas de rúcula.</p>
+                    <div class="price">
+                        R$ 27,00
+                    </div>
+
+                </div>
+                <div class="servico">
+                    <div class="image-container">
+                        <img src="img/Bacon Lovers.png" alt="Corte + Barba">
+                        <div class="plus">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <h3>Bacon Lovers</h3>
+                    <p class="descri" id="oi">Pão com gergelim, 160g de carne, cheddar, bacon em tiras, farofa de bacon
+                        e
+                        maionese defumada..</p>
+                    <div class="price">
+                        R$ 33,00
+                    </div>
+                </div>
+
+                <div class="servico">
+                    <div class="image-container">
+                        <img src="img/Batata 4 Queijos.png" alt="Batata 4 Queijos">
+                        <div class="plus">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <h3>Batata 4 Queijos</h3>
+                    <p class="descri" id="oi">Porção com 350g de batata frita coberta com creme de 4 queijos (muçarela,
+                        gorgonzola, parmesão e cheddar).</p>
+                    <div class="price">R$ 26,00</div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="addtocarte">
+            <div class="botoes-container">
+                <div class="carda">
+                    <button class="addtocart">
+                        FINALIZAR PEDIDO<span class="preco">R$ 0,00</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <script src="cart.js"></script>
+</body>
+
+</html>

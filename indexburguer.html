@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="burguercart.css">
+  <title>Burguer</title>
+</head>
+
+<body>
+  <div class="cart-container">
+    <header class="cart-header">
+      <section>
+        <button class="close-btn" onclick="location.href='index.html'"><img width="20" height="20"
+            src="https://img.icons8.com/ios-filled/50/back.png" alt="back" /></button>
+        <h1>Detalhes do produto</h1>
+      </section>
+    </header>
+
+    <section class="menu" id="Menu">
+      <div class="box-burguer">
+        <div class="burguer">
+          <img src="" alt="corte masculino">
+          <div class="name">
+            <h3></h3>
+            <div class="price">
+              
+            </div>
+            <p class="descri"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+      <section class="ipunt1">
+        <div class="header">
+          <div>
+            <p class="titlea">Escolha o ponto da carne
+              <span class="escolha">Escolha 1 item</span>
+            </p>
+          </div>
+          <span class="obrig">Obrigatório</span>
+        </div>
+
+        <div class="pontocarne">
+          <div class="item">
+            <div class="info">
+              <img src="img/BEM PASSADO.png" alt="Bem Passado">
+              <div>
+                <label>Bem Passado</label>
+                <div class="subinfo">Máx 2</div>
+              </div>
+            </div>
+            <input type="radio" name="ponto-carne">
+          </div>
+
+          <div class="item">
+            <div class="info">
+              <img src="img/aoponto.png" alt="Ao Ponto">
+              <div>
+                <label>Ao Ponto</label>
+                <div class="subinfo">Máx 2</div>
+              </div>
+            </div>
+            <input type="radio" name="ponto-carne">
+          </div>
+        </div>
+      </section>
+
+      <section class="bloco-adicionais">
+        <div class="bloco-cabecalho">
+          <div>
+            <p class="bloco-titulo">ADICIONAIS BURGUERS</p>
+            <p class="bloco-subtitulo">Escolha até 4 itens</p>
+          </div>
+        </div>
+
+        <div class="bloco-opcoes">
+          <div class="opcao-item">
+            <div class="opcao-info">
+              <img src="img/tomate.png" alt="Tomate" class="opcao-img">
+              <div class="opcao-textos">
+                <span class="opcao-nome">Tomate</span>
+                <span class="opcao-preco">R$ 2,00</span>
+                <span class="opcao-limite">Máx 1</span>
+              </div>
+            </div>
+            <input type="checkbox" class="opcao-check">
+          </div>
+
+          <div class="opcao-item">
+            <div class="opcao-info">
+              <img src="img/cebolaroxa.png" alt="Cebola Roxa" class="opcao-img">
+              <div class="opcao-textos">
+                <span class="opcao-nome">Cebola Roxa</span>
+                <span class="opcao-preco">R$ 2,00</span>
+                <span class="opcao-limite">Máx 1</span>
+              </div>
+            </div>
+            <input type="checkbox" class="opcao-check">
+          </div>
+
+          <div class="opcao-item">
+            <div class="opcao-info">
+              <img src="img/Banana da Terra.png" alt="Banana da Terra" class="opcao-img">
+              <div class="opcao-textos">
+                <span class="opcao-nome">Banana da Terra</span>
+                <span class="opcao-preco">R$ 3,00</span>
+                <span class="opcao-limite">Máx 1</span>
+              </div>
+            </div>
+            <input type="checkbox" class="opcao-check">
+          </div>
+
+          <div class="opcao-item">
+            <div class="opcao-info">
+              <img src="img/alfaceamericano.png" alt="Alface Americano" class="opcao-img">
+              <div class="opcao-textos">
+                <span class="opcao-nome">Alface Americano</span>
+                <span class="opcao-preco">R$ 4,00</span>
+                <span class="opcao-limite">Máx 1</span>
+              </div>
+            </div>
+            <input type="checkbox" class="opcao-check">
+          </div>
+        </div>
+      </section>
+
+      <section class="combo-secao">
+        <div class="combo-cabecalho">
+          <div>
+            <p class="combo-titulo">Gostaria de um combo?</p>
+            <p class="combo-subtitulo">Escolha até 2 itens</p>
+          </div>
+        </div>
+
+        <div class="combo-opcoes">
+          <div class="combo-item ativo">
+            <div class="combo-esquerda">
+              <img src="img/combos.jpg" alt="Combo 1" class="combo-img">
+              <div class="combo-textos">
+                <span class="combo-nome"><strong>170g de Batata Frita + Refri Lata</strong></span>
+                <span class="combo-preco">R$ 15,00</span>
+              </div>
+            </div>
+            <div class="combo-contador">
+              <button class="combo-menor">−</button>
+              <span class="combo-quantidade">0</span>
+              <button class="combo-maior">+</button>
+            </div>
+          </div>
+
+          <div class="combo-item ativo">
+            <div class="combo-esquerda">
+              <img src="img/combos.jpg" alt="Combo 2" class="combo-img">
+              <div class="combo-textos">
+                <span class="combo-nome"><strong>170g de Batata Frita + MilkShake</strong></span>
+                <span class="combo-preco">R$ 32,00</span>
+              </div>
+            </div>
+            <div class="combo-contador">
+              <button class="combo-menor">−</button>
+              <span class="combo-quantidade">0</span>
+              <button class="combo-maior">+</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="observacao">
+        <h2 class="title">OBSERVAÇÕES</h2> <br><br>
+
+        <label for="mensagem" class="obs-form"></label>
+        <textarea name="mensagem" id="mensagem-form" placeholder="EX: TIRAR CEBOLA, OVO, ETC." required></textarea>
+      </section>
+
+      <section class="addtocart">
+        <div class="botoes-container">
+          <div class="carda">
+            <span>AVANÇAR</span>
+            <span class="preco">R$ 31,00</span>
+          </div>
+        </div>
+      </section>
+
+
+
+      <script src="burgercart.js"></script>
+</body>
+
+</html>

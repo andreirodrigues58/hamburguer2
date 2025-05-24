@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="burguer.css">
+    <title>Hamburgueria</title>
+</head>
+
+<body>
+    <header class="header">
+        <section>
+            <a href="#" class="logo">
+                <img width="70" height="70" src="img/logo.webp" alt="barbearia logo">
+                <p>FAUSTINO BURGUER</p>
+            </a>
+
+
+            <div class="icons">
+                <img id="share-btn" width="37" height="37"
+  src="https://img.icons8.com/ios-glyphs/351f11/share-2--v1.png"
+  alt="Compartilhar site" />
+            </div>
+        </section>
+    </header>
+
+    <div class="home-container">
+        <section id="Home">
+            <div class="content">
+                <p class="abre">Carregando horário...</p>
+                <p class="pedido">Sem pedido mínimo</p>
+              </div>
+              
+              <div class="aberto" style="display: none;">
+                <p class="fechada-msg">Loja Fechada - Aguardando horário</p>
+              </div>
+        </section>
+    </div>
+
+    <section class="menu" id="Menu">
+        <h2 class="title">OS MAIS PEDIDOS</h2>
+        <div class="box-servico">
+            <div class="servico">
+                <img src="img/Texas Smoke.png" alt="corte masculino">
+                <h3>Texas Smoke</h3>
+                <p class="descri" id="oi">Pão Australiano, 160g De Blend Defumado, Queijo Prato, Cebola Crispy, Picles
+                    De Jalapeño E Molho Barbecue Defumado.</p>
+                <div class="price">
+                    R$ 31,00
+                </div>
+
+            </div>
+            <div class="servico">
+                <img src="img/Havaiano.png" alt="barba">
+                <h3>Havaiano</h3>
+                <p class="descri" id="oi">Pão brioche, 160g de blend suíno, queijo muçarela, abacaxi grelhado, alface e
+                    molho agridoce de maracujá.</p>
+                <div class="price">
+                    R$ 29,00
+                </div>
+            </div>
+            <div class="servico">
+                <img src="img/Cebola Bloom.png" alt="barba">
+                <h3>Cebola Bloom</h3>
+                <p class="descri" id="oi">Cebola inteira empanada e aberta em formato de flor, super crocante. Acompanha
+                    molho especial da casa.</p>
+                <div class="price">
+                    R$ 6,00
+                </div>
+
+            </div>
+            <div class="servico">
+                <img src="img/Vampiro.png" alt="Sobrancelha">
+                <h3>Vampiro</h3>
+                <p class="descri" id="oi">Pão de alho artesanal, 160g de carne bovina, queijo parmesão gratinado, molho
+                    aioli extra alho e folhas de rúcula.</p>
+                <div class="price">
+                    R$ 27,00
+                </div>
+
+            </div>
+            <div class="servico">
+                <img src="img/Bacon Lovers.png" alt="Corte + Barba">
+                <h3>Bacon Lovers</h3>
+                <p class="descri" id="oi">Pão com gergelim, 160g de carne, cheddar, bacon em tiras, farofa de bacon e
+                    maionese defumada.</p>
+                <div class="price">
+                    R$ 33,00
+                </div>
+            </div>
+
+            <div class="servico">
+                <img src="img/Batata 4 Queijos.png" alt="Corte + Barba">
+                <h3>Batata 4 Queijos</h3>
+                <p class="descri" id="oi">Porção com 350g de batata frita coberta com creme de 4 queijos (muçarela,
+                    gorgonzola, parmesão e cheddar).</p>
+                <div class="price">
+                    R$ 26,00
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="menu" id="Menu">
+        <h2 class="title">PETISCOS</h2>
+        <div class="box-petiscos">
+            <div class="petiscos">
+                <img src="img/Batata Frita Tradicional.png" alt="corte masculino">
+                <div class="name">
+                    <h3>Batata Frita Tradicional</h3>
+                    <p class="descri">Porção com 350g de batata rústica temperada com páprica defumada, finalizada com
+                        queijo coalho ralado e melaço de cana.</p>
+                    <div class="price">
+                        R$ 31,00
+                    </div>
+                </div>
+            </div>
+
+            <div class="petiscos">
+                <img src="img/Batata 4 Queijos.png" alt="corte masculino">
+                <div class="name">
+                    <h3>Batata 4 Queijos</h3>
+                    <p class="descri">Porção com 350g de batata frita coberta com creme de 4 queijos (muçarela,
+                        gorgonzola, parmesão e cheddar).</p>
+                    <div class="price">
+                        R$ 26,00
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="petiscos">
+                <img src="img/Batata Ervas Finas.png" alt="corte masculino">
+                <div class="name">
+                    <h3>Batata Ervas Finas</h3>
+                    <p class="descri">Batata palito 350g com manteiga de ervas (alecrim, manjericão e orégano) e toque
+                        de limão siciliano.</p>
+                    <div class="price">
+                        R$ 21,00
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="petiscos">
+                <img src="img/Bolinho Sertanejo.png" alt="corte masculino">
+                <div class="name">
+                    <h3>Bolinho Sertanejo</h3>
+                    <p class="descri">8 bolinhos de aipim recheados com queijo coalho e bacon crocante. Acompanha molho
+                        barbecue artesanal.</p>
+                    <div class="price">
+                        R$ 27,00
+                    </div>
+                </div>
+            </div>
+
+            <div class="petiscos">
+                <img src="img/Cebola Bloom.png" alt="corte masculino">
+                <div class="name">
+                    <h3>Cebola Bloom</h3>
+                    <p class="descri">Cebola inteira empanada e aberta em formato de flor, super crocante. Acompanha
+                        molho especial da casa.</p>
+                    <div class="price">
+                        R$ 22,00
+                    </div>
+                </div>
+            </div>
+
+            <div class="petiscos">
+                <img src="img/Croqueta Nordestina.png" alt="corte masculino">
+                <div class="name">
+                    <h3>Croqueta Nordestina</h3>
+                    <p class="descri">8 unidades de croquetas de carne de sol com catupiry, empanadas e servidas com
+                        geleia de pimenta.</p>
+                    <div class="price">
+                        R$ 28,00
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu" id="Menu">
+        <h2 class="title">HAMBURGUERES ARTESANAIS</h2>
+        <div class="box-burguer">
+            <div class="burguer">
+                <img src="img/Bacon Lovers.png" alt="corte masculino">
+                <div class="name">
+                    <h3>Bacon Lovers</h3>
+                    <p class="descri">Pão com gergelim, 160g de carne, cheddar, bacon em tiras, farofa de bacon e
+                        maionese defumada.</p>
+                    <div class="price">
+                        R$ 33,00
+                    </div>
+                </div>
+            </div>
+
+            <div class="burguer">
+                <img src="img/Fogo Selvagem.png" alt="corte masculino">
+                <div class="name">
+                    <h3>Fogo Selvagem</h3>
+                    <p class="descri">Pão brioche tostado, 160g de carne apimentada, queijo cheddar duplo, pimenta
+                        biquinho, cebola roxa e maionese chipotle.</p>
+                    <div class="price">
+                        R$ 30,00
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="burguer">
+                <img src="img/Havaiano.png" alt="corte masculino">
+                <div class="name">
+                    <h3>Havaiano</h3>
+                    <p class="descri">Pão brioche, 160g de blend suíno, queijo muçarela, abacaxi grelhado, alface e
+                        molho agridoce de maracujá.</p>
+                    <div class="price">
+                        R$ 29,00
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="burguer">
+                <img src="img/Texas Smoke.png" alt="corte masculino">
+                <div class="name">
+                    <h3>Texas Smoke</h3>
+                    <p class="descri">Pão australiano, 160g de blend defumado, queijo prato, cebola crispy, picles de
+                        jalapeño e molho barbecue defumado.</p>
+                    <div class="price">
+                        R$ 31,00
+                    </div>
+                </div>
+            </div>
+
+            <div class="petiscos">
+                <img src="img/Três Queijos.png" alt="corte masculino">
+                <div class="name">
+                    <h3>Três Queijos</h3>
+                    <p class="descri">Pão brioche, 160g de blend exclusivo, queijo gorgonzola, cheddar cremoso, queijo
+                        prato e molho branco.</p>
+                    <div class="price">
+                        R$ 32,00
+                    </div>
+                </div>
+            </div>
+
+            <div class="burguer">
+                <img src="img/Vampiro.png" alt="corte masculino">
+                <div class="name">
+                    <h3>Vampiro</h3>
+                    <p class="descri"> Pão de alho artesanal, 160g de carne bovina, queijo parmesão gratinado, molho
+                        aioli extra alho e folhas de rúcula.</p>
+                    <div class="price">
+                        R$ 27,00
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu" id="Menu">
+        <h2 class="title">BEBIDAS</h2>
+        <div class="box-bebida">
+            <div class="bebida">
+                <img src="img/Coca-Cola Tradicional.png" alt="corte masculino">
+                <div class="name">
+                    <h3>Coca-Cola Tradicional</h3>
+                    <p class="descri"> Refrigerante Coca-Cola original — lata de 350ml.</p>
+                    <div class="price">
+                        R$ 6,00
+                    </div>
+                </div>
+            </div>
+
+            <div class="bebida">
+                <img src="img/Coca-Cola Zero.png" alt="corte masculino">
+                <div class="name">
+                    <h3>Coca-Cola Zero</h3>
+                    <p class="descri">A versão zero açúcar da Coca-Cola, lata com 350ml.</p>
+                    <div class="price">
+                        R$ 6,00
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="bebida">
+                <img src="img/Cupuaçu Raiz.png" alt="corte masculino">
+                <div class="name">
+                    <h3>Cupuaçu Raiz</h3>
+                    <p class="descri"> 350ml de suco puro de cupuaçu com leve toque cremoso da fruta amazônica.</p>
+                    <div class="price">
+                        R$ 8,00
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="bebida">
+                <img src="img/Fanta Laranja Refrescante.png" alt="corte masculino">
+                <div class="name">
+                    <h3>Fanta Laranja</h3>
+                    <p class="descri"> Lata de 350ml da clássica Fanta sabor laranja.</p>
+                    <div class="price">
+                        R$ 6,00
+                    </div>
+                </div>
+            </div>
+
+            <div class="bebida">
+                <img src="img/Guaraná Original (Lata).png" alt="corte masculino">
+                <div class="name">
+                    <h3>Guaraná Original (Lata)</h3>
+                    <p class="descri">Refrigerante Guaraná Antarctica gelado — 350ml.</p>
+                    <div class="price">
+                        R$ 6,00
+                    </div>
+                </div>
+            </div>
+
+            <div class="bebida">
+                <img src="img/Guaraná Zero Açúcar (Lata).png" alt="corte masculino">
+                <div class="name">
+                    <h3>Guaraná Zero Açúcar (Lata)</h3>
+                    <p class="descri"> A versão zero do clássico Guaraná Antarctica — 350ml.</p>
+                    <div class="price">
+                        R$ 6,00
+                    </div>
+                </div>
+            </div>
+
+            <div class="bebida">
+                <img src="img/Tropical Mix.png" alt="corte masculino">
+                <div class="name">
+                    <h3>Tropical Mix</h3>
+                    <p class="descri"> 350ml de suco natural de morango com toque refrescante de cupuaçu.</p>
+                    <div class="price">
+                        R$ 8,00
+                    </div>
+                </div>
+            </div>
+
+            <div class="bebida">
+                <img src="img/Morango Fresh.png" alt="corte masculino">
+                <div class="name">
+                    <h3>Morango Fresh</h3>
+                    <p class="descri"> Suco 100% natural de morango, servido bem gelado — 350ml.</p>
+                    <div class="price">
+                        R$ 8,00
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <section>
+            <div class="iconsa">
+                <div class="item active">
+                    <a href="index.html" rel="noopener noreferrer">
+                        <img width="28" height="28" src="https://img.icons8.com/material-rounded/FDE7B3/home.png"
+                            alt="home" />
+                    </a>
+                    <p class="i">Inicio</p>
+                </div>
+                <div class="item">
+                    <a href="indexcart.html" class="carrinho-link">
+                      <img width="28" height="28" src="https://img.icons8.com/material-sharp/FDE7B3/shopping-cart.png"
+                        alt="shopping-cart" />
+                        <span class="contador-carrinho">0</span>
+                    </a>
+                    <p class="i">Carrinho</p>
+                  </div>
+            </div>
+
+        </section>
+    </footer>
+
+    <script src="burguer.js"></script>
+</body>
+
+</html>

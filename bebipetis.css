@@ -1,0 +1,360 @@
+:root {
+    --black: #000;
+    --branco: #FFFFFF;
+    --marrom: #351f11;
+    --border: 1px solid #F5F5F5;
+    --begeclaro: #FDE7B3;
+    font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+section {
+    padding: 48px 32px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.cart-header {
+    background-color: var(--branco);
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: 1000;
+    border-bottom: 2px solid var(--begeclaro);
+    align-items: center;
+}
+
+
+.cart-header section {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    gap: 20px;
+}
+
+.cart-header h1 {
+    font-size: 18px;
+    font-weight: lighter;
+    margin-bottom: 5px;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+.title {
+    font-size: 18px;
+    color: var(--marrom);
+    text-align: left;
+    text-transform: uppercase;
+    background-color: #F5F5F5;
+    padding: 15px;
+    font-weight: bold;
+}
+
+/* Estilo comum para os containers */
+.box-petiscos,
+.box-bebida {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* espaço entre os itens se houver mais de um */
+  padding-bottom: 10px; /* evita encostar demais na próxima seção */
+}
+
+/* Estilo dos itens individuais (petiscos ou bebida) */
+.petiscos {
+  display: flex;
+  gap: 15px;
+  border-radius: 6px;
+  padding: 10px 20px;
+  align-items: center;
+  transition: box-shadow 0.3s ease;
+  background-color: #fff; /* opcional, se quiser destacar */
+}
+
+/* Imagem */
+.petiscos img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Bloco do conteúdo textual */
+.name {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 20px;
+}
+
+/* Preço */
+.price {
+  font-weight: bold;
+  color: #ED2B2A;
+  font-size: 20px;
+}
+
+
+.observacao .obs-form {
+    color: #F5F5F5;
+    font-weight: bold;
+}
+
+  .observacao textarea {
+      margin-left: 80px;
+      padding: 20px;
+      width: 900px;
+      height: 100px;
+      border-radius: 20px;
+      border: none;
+      margin-top: 5px;
+      border: 2px solid var(--marrom);
+      margin-bottom: 25px;
+  }
+
+  .observacao textarea:hover {
+    border: 2px solid var(--begeclaro);
+}
+
+
+
+.addtocart {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: 1000;
+    border-top: 2px solid var(--begeclaro);
+    height: 60px;
+    width: 1100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 0 20px;
+  }
+  
+  .botoes-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  /* Botões de + e - */
+  .plusmenos {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .plusmenos button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+  }
+  
+  .quantidade {
+    font-size: 18px;
+    min-width: 20px;
+    text-align: center;
+  }
+  
+  /* Botão "Adicionar" com preço */
+  .carda {
+    background-color: var(--marrom);
+    color: var(--begeclaro);
+    border-radius: 8px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  .carda span {
+    font-weight: bold;
+  }
+  
+  .carda .preco {
+    margin-left: 20px;
+    font-weight: bold;
+  }
+  
+
+.carda .voltar{
+    background: none;
+    color: var(--begeclaro);
+    font-size: 12px;
+    cursor: pointer;
+    font-weight: 900;
+}
+
+.carda .voltar:hover{
+    letter-spacing: 0.02rem;
+}
+
+
+/* Seu CSS original aqui ... */
+
+/* MEDIA QUERIES RESPONSIVAS */
+
+/* Para telas até 798px (tablet/móvel maior) */
+@media (max-width: 768px) {
+  section {
+    padding: 32px 20px;
+    max-width: 100%;
+  }
+
+  .petiscos img {
+    width: 130px;
+    height: 130px;
+  }
+
+  .name {
+    font-size: 15px;
+  }
+
+  .price {
+    font-size: 13px;
+  }
+
+  .observacao textarea {
+    margin-left: 0;
+    width: 100%;
+    max-width: 600px;
+    padding: 15px;
+    height: 90px;
+    font-size: 14px;
+  }
+
+  .addtocart {
+    width: 100%;
+    padding: 0 10px;
+    height: 60px;
+  }
+
+  .botoes-container {
+    max-width: 100%;
+    gap: 10px;
+  }
+
+  .carda {
+    font-size: 15px;
+    padding: 8px 15px;
+  }
+}
+
+/* Para telas até 390px (mobile pequeno) */
+@media (max-width: 390px) {
+  section {
+    padding: 24px 16px;
+  }
+
+  .cart-header section {
+    gap: 10px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .cart-header h1 {
+    font-size: 16px;
+  }
+
+  .close-btn img {
+    width: 16px;
+    height: 16px;
+  }
+
+  .petiscos {
+    flex-direction: row;
+    margin-top: 8px;
+    align-items: flex-start;
+  }
+
+  .petiscos img {
+    width: 100px;
+    height: 100px;
+    border-radius: 12px;
+  }
+
+  .name {
+    font-size: 13px;
+    gap: 6px;
+  }
+
+  .price {
+    font-size: 16px;
+  }
+
+  .observacao textarea {
+    margin-left: 0;
+    width: 100%;
+    height: 80px;
+    padding: 12px;
+    font-size: 13px;
+  }
+
+  .addtocart {
+    height: 50px;
+    padding: 0 8px;
+  }
+
+  .botoes-container {
+    gap: 8px;
+  }
+
+  .plusmenos button {
+    font-size: 20px;
+  }
+
+  .quantidade {
+    font-size: 16px;
+    min-width: 18px;
+  }
+
+  .carda {
+    font-size: 16px;
+    padding: 8px 12px;
+  }
+
+  .carda span {
+    font-weight: 700;
+  }
+}
